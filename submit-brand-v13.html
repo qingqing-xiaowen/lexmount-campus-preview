@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#c9ff54">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="forms-brand-v13.css">
+  <title>A · 官网配色｜提交作品 · Lexmount 真实任务挑战预览</title>
+  <link rel="stylesheet" href="brand-v13.css">
+</head>
+<body class="form-page">
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs><symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol><symbol id="back" viewBox="0 0 24 24"><path d="M20 12H5m6-6-6 6 6 6"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol></defs></svg>
+  <div class="preview-bar"><div class="container"><span>评审预览 A · 官网配色（V13）</span><span>填写内容不会发送或保存</span></div></div>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="brand-v13.html"><img src="lexmount-lockup.png" alt="Lexmount" width="67" height="42"><span>云平台真实任务挑战</span></a><a class="back-link" href="brand-v13.html#submit"><svg aria-hidden="true"><use href="#back"/></svg>返回投稿说明</a></div></header>
+  <main>
+    <section class="form-hero"><h1>把你的实践，讲给我们听</h1><p>说明一个真实任务，留下做法、结果和材料。<br>可以简洁，也可以先如实分享尚未完成的探索。</p></section>
+    <div class="form-wrap">
+      <section class="form-card" id="form-section" aria-labelledby="form-title">
+        <div class="card-heading"><h2 id="form-title">提交作品</h2><span><span class="required">*</span> 为必填</span></div>
+        <p class="card-intro">由一位作者或团队代表填写。一份材料文档可以包含过程与结果，无需上传所有形式的附件。</p>
+        <a class="template-link" href="submission-template.md" download>下载作品说明模板 <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+        <div class="preview-notice">这是可填写的投稿预览，不会发送材料或生成参赛记录。正式投稿入口与核验安排待确认。</div>
+        <form id="submission-form" novalidate autocomplete="off">
+          <fieldset><legend class="section-label">01　讲清这次实践</legend>
+            <div class="field"><label for="work-title">作品名称<span class="required">*</span></label><input id="work-title" name="workTitle" required maxlength="100" placeholder="用一句话概括你做了什么" aria-describedby="work-title-error" data-error="请填写作品名称。"><p class="field-error" id="work-title-error" hidden></p></div>
+            <div class="field"><label for="task-problem">想解决什么问题<span class="required">*</span></label><textarea id="task-problem" name="taskProblem" required maxlength="1500" placeholder="谁在什么场景遇到问题？你希望得到什么结果？" aria-describedby="task-problem-error" data-error="请简要说明具体问题与使用场景。"></textarea><p class="field-error" id="task-problem-error" hidden></p></div>
+            <div class="field"><label for="cloud-role">怎么做的，云平台参与了什么<span class="required">*</span></label><textarea id="cloud-role" name="cloudRole" required maxlength="2000" placeholder="用了哪些 Agent、脚本或工具？Lexmount 云平台实际承担了哪些步骤？哪些步骤由其他工具或人工完成？" aria-describedby="cloud-hint cloud-role-error" data-error="请说明做法及 Lexmount 云平台承担的步骤。"></textarea><p class="hint" id="cloud-hint">使用自研工具也可以，请补充运行方式和必要环境。不要填写 API Key、密码或其他凭证。</p><p class="field-error" id="cloud-role-error" hidden></p></div>
+            <div class="field"><label for="task-result">结果与发现<span class="required">*</span></label><textarea id="task-result" name="taskResult" required maxlength="2000" placeholder="实际得到了什么？哪些部分完成、哪些还没完成？需要人工接手吗？若有耗时或费用记录，也可说明。" aria-describedby="result-hint task-result-error" data-error="请说明实际结果、发现或未完成的部分。"></textarea><p class="hint" id="result-hint">有数据就写明依据，无需为了参赛编造提升比例。部分完成或失败的探索，也请如实说明；投稿不代表已达到获奖条件。</p><p class="field-error" id="task-result-error" hidden></p></div>
+            <div class="field"><label for="evidence-link">实践材料链接<span class="required">*</span></label><input id="evidence-link" name="evidenceLink" type="url" inputmode="url" required maxlength="2048" spellcheck="false" autocapitalize="none" placeholder="https://…" aria-describedby="evidence-hint evidence-link-error" data-error="请提供至少一个可访问的实践材料链接。"><p class="hint" id="evidence-hint">提供可供评审查看的文档、截图集、录屏、运行记录或 Demo。材料需能说明云平台使用和任务结果；多个文件可整理在同一份文档。无需向所有人公开，也不要求公开完整源码。</p><p class="field-error" id="evidence-link-error" hidden></p></div>
+            <div class="field"><label for="existing-work">是否基于已有项目或教程<span class="required">*</span></label><select id="existing-work" name="existingWork" required aria-describedby="existing-work-error" data-error="请选择是否基于已有项目或教程。"><option value="">请选择</option><option value="new">本轮新开展的实践</option><option value="existing">基于旧项目、课程作业、教程或其他赛事作品</option></select><p class="field-error" id="existing-work-error" hidden></p></div>
+            <div class="field field-group" id="contribution-group" hidden><label for="new-contribution">已有基础与本轮新增贡献<span class="required">*</span></label><textarea id="new-contribution" name="newContribution" disabled maxlength="1500" placeholder="原来已有何种成果？本轮新增了哪些云平台实践或验证？请附参考来源，并说明既往参赛情况（如有）。" aria-describedby="new-contribution-error" data-error="请说明已有基础、来源与本轮新增贡献。"></textarea><p class="field-error" id="new-contribution-error" hidden></p></div>
+          </fieldset>
+          <fieldset><legend class="section-label">02　作者与联系信息</legend>
+            <div class="field"><label for="authors">实际作者与分工<span class="required">*</span></label><textarea id="authors" name="authors" required maxlength="1000" placeholder="个人作品：填写自己的姓名或昵称。&#10;协作作品：列出实际作者与各自贡献，不用填写队友的私人联系方式。" aria-describedby="authors-hint authors-error" data-error="请填写实际作者及分工。"></textarea><p class="hint" id="authors-hint">奖金按作品计算，团队共同分享。人数及参评资格以最终规则为准。</p><p class="field-error" id="authors-error" hidden></p></div>
+            <div class="field"><label for="contact-email">联系邮箱<span class="required">*</span></label><input id="contact-email" name="contactEmail" type="email" inputmode="email" required maxlength="254" spellcheck="false" autocapitalize="none" placeholder="由本人或团队联系代表填写" aria-describedby="contact-hint contact-email-error" data-error="请填写可联系的邮箱。"><p class="hint" id="contact-hint">如已报名，请使用报名时的邮箱，便于关联与补充材料。不收集其他队友的邮箱。</p><p class="field-error" id="contact-email-error" hidden></p></div>
+            <div class="field"><label for="registration-status">你是否已填写活动报名表<span class="required">*</span></label><select id="registration-status" name="registrationStatus" required aria-describedby="registration-hint registration-status-error" data-error="请选择报名情况。"><option value="">请选择</option><option value="registered">已报名</option><option value="not-registered">尚未报名，或不确定</option></select><p class="hint" id="registration-hint">未提前报名也可以投稿，在这里补齐本人的基本信息即可。</p><p class="field-error" id="registration-status-error" hidden></p></div>
+            <div class="field-group" id="registration-group" hidden>
+              <div class="field"><label for="display-name">怎么称呼你<span class="required">*</span></label><input id="display-name" name="displayName" disabled maxlength="50" placeholder="投稿联系人的姓名或常用昵称" aria-describedby="display-name-error" data-error="请填写投稿联系人的姓名或昵称。"><p class="field-error" id="display-name-error" hidden></p></div>
+              <div class="field"><label for="participant-status">你目前的身份<span class="required">*</span></label><select id="participant-status" name="participantStatus" disabled aria-describedby="identity-hint participant-status-error" data-error="请选择当前身份。"><option value="">请选择当前情况</option><option value="student">在校学生（含专科、本科及研究生）</option><option value="student-employed">正在就读，同时工作或任教</option><option value="nonstudent">目前非在校学生</option></select><p class="hint" id="identity-hint">这里只登记填表人的情况，不代替整支团队的身份或获奖资格核验。</p><p class="field-error" id="participant-status-error" hidden></p></div>
+              <div class="field" id="school-field" hidden><label for="school-name">当前就读学校<span class="required">*</span></label><input id="school-name" name="schoolName" disabled maxlength="100" placeholder="学校全称" aria-describedby="school-name-error" data-error="请填写当前就读学校。"><p class="field-error" id="school-name-error" hidden></p></div>
+            </div>
+          </fieldset>
+          <p class="privacy-note" id="information-use"><strong>材料用途：</strong>用于本轮作品评审、核验与联系。公开展示作品前，会另行与你确认内容、署名与范围。材料中的个人信息及第三方资料请先脱敏。</p>
+          <label class="consent" for="information-confirmation"><input id="information-confirmation" name="informationConfirmation" type="checkbox" required aria-describedby="information-use information-confirmation-error" data-error="请确认信息用途及材料真实性。"><span>我已了解以上用途，确认信息与实践记录真实，并有权提供所附材料。<span class="required">*</span></span></label><p class="field-error" id="information-confirmation-error" hidden></p>
+          <div class="error-summary" id="error-summary" role="alert" hidden></div>
+          <div class="form-actions"><button class="btn btn-primary submit-button" id="preview-submission" type="submit" disabled>预览提交后的确认页 <svg aria-hidden="true"><use href="#arrow"/></svg></button><p>此预览不会保存内容或检查外部材料，离开或刷新后需重新填写。</p></div>
+          <noscript><p class="preview-notice">请启用 JavaScript 体验字段切换和确认页。本页不会提交信息。</p></noscript>
+        </form>
+      </section>
+      <section class="form-card success" id="success-section" aria-labelledby="success-title" hidden>
+        <div class="success-symbol"><svg aria-hidden="true"><use href="#check"/></svg></div><h2 id="success-title" tabindex="-1">投稿流程预览完成</h2>
+        <p>刚才填写的内容没有发送或保存，也没有生成正式参赛记录。正式投稿后的确认页将提供以下信息：</p>
+        <ol class="next-steps"><li><span class="number">01</span><div><h3>提交记录与修改入口</h3><p>确认作品是否已收到，以及在截止前如何更新同一份作品。正式记录与修改方式待接入。</p></div></li><li><span class="number">02</span><div><h3>材料核验与补充通知</h3><p>如材料无法访问，或需要补充运行说明，活动团队会通过所留邮箱联系。具体核验安排与时限待公布。</p></div></li><li><span class="number">03</span><div><h3>评选与展示安排</h3><p>提交完成不等于获奖。结果按活动时间公布；如邀请你公开展示案例，会另行确认授权范围。</p></div></li></ol>
+        <div class="success-actions"><button class="btn btn-primary" id="edit-submission" type="button">返回修改填写内容</button><a class="btn btn-secondary" href="brand-v13.html">返回活动页</a></div>
+        <p class="form-meta">加入社群完全自愿，不影响参加资格。<a href="https://discord.gg/95QXqbsgVu" target="_blank" rel="noopener noreferrer">前往 Discord 交流 ↗</a></p>
+      </section>
+      <div class="after-form">只想先报名，还没准备作品？<a href="register-brand-v13.html">前往报名表</a></div>
+    </div>
+  </main>
+  <footer class="page-footer"><p>Lexmount 云平台真实任务挑战</p><p>内部预览 · 时间、权益、资格与正式接收方式待确认</p></footer>
+  <script>
+    const form=document.getElementById('submission-form');
+    const summary=document.getElementById('error-summary');
+    const fields=[...form.querySelectorAll('[data-error]')];
+    const byId=id=>document.getElementById(id);
+    function clearError(input){input.removeAttribute('aria-invalid');const error=byId(input.id+'-error');error.hidden=true;error.textContent='';summary.hidden=true}
+    function setFieldActive(id,active){const input=byId(id);input.disabled=!active;input.required=active;if(!active)clearError(input)}
+    function updateConditions(){
+      const existing=byId('existing-work').value==='existing';byId('contribution-group').hidden=!existing;setFieldActive('new-contribution',existing);
+      const extra=byId('registration-status').value==='not-registered';byId('registration-group').hidden=!extra;setFieldActive('display-name',extra);setFieldActive('participant-status',extra);
+      const school=extra&&['student','student-employed'].includes(byId('participant-status').value);byId('school-field').hidden=!school;setFieldActive('school-name',school);
+    }
+    for(const input of fields){input.addEventListener('input',()=>clearError(input));input.addEventListener('change',()=>clearError(input))}
+    ['existing-work','registration-status','participant-status'].forEach(id=>byId(id).addEventListener('change',updateConditions));
+    form.addEventListener('submit',event=>{
+      event.preventDefault();let first=null,count=0;
+      for(const input of fields){clearError(input);if(input.disabled)continue;let message='';
+        if(input.type==='checkbox'){if(input.required&&!input.checked)message=input.dataset.error}
+        else{input.value=input.value.trim();if(input.required&&!input.value)message=input.dataset.error;else if(input.type==='email'&&input.value&&!input.validity.valid)message='请检查邮箱格式，例如 name@example.com。';else if(input.type==='url'&&input.value){try{const url=new URL(input.value);if(!['https:','http:'].includes(url.protocol)||!url.hostname)throw new Error()}catch{message='请填写以 https:// 或 http:// 开头的完整材料链接。'}}}
+        if(message){input.setAttribute('aria-invalid','true');const error=byId(input.id+'-error');error.textContent=message;error.hidden=false;first??=input;count++}
+      }
+      if(first){summary.textContent='还有 '+count+' 项需要检查，请按字段下方的提示补充。';summary.hidden=false;first.focus();return}
+      byId('form-section').hidden=true;byId('success-section').hidden=false;byId('success-title').focus();byId('success-section').scrollIntoView({block:'start'});
+    });
+    byId('edit-submission').addEventListener('click',()=>{byId('success-section').hidden=true;byId('form-section').hidden=false;byId('work-title').focus();byId('form-section').scrollIntoView({block:'start'})});
+    updateConditions();byId('preview-submission').disabled=false;
+  </script>
+</body>
+</html>

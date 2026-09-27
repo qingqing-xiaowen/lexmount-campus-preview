@@ -1,0 +1,43 @@
+/* V13 — approved V7 visual structure, current content, Lexmount brand color. */
+:root{
+ --ink:#181b20;--muted:#454a50;--blue:#274d35;--blue-deep:#193924;--deep:#193924;
+ --lime:#c9ff54;--lime-hover:#b9ef46;--line:#d8dedb;--paper:#f8f9f7;--pale:#eff7df;
+ --control:#7d8c79;--error:#a12c36;
+}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #274d35;outline-offset:4px}
+.btn-primary,.btn-white{background:var(--lime);color:#24341b;border-color:#789a44}
+.btn-primary:hover,.btn-white:hover{background:var(--lime-hover);color:#203016;box-shadow:none}
+.btn-secondary,.btn-outline-white{background:#fff;color:var(--ink);border-color:#7d8c79}
+.btn-secondary:hover,.btn-outline-white:hover{background:#f3f8eb}
+.preview-bar{background:#f4f6f1;color:#414941;border-bottom:1px solid #e0e6db}
+.preview-inner span:last-child,.preview-bar span:last-child{color:#4b544b}
+.event-page .hero{background:#f6f9ef}
+.event-page .event-brand{color:#262b2c}
+.event-page .event-name{color:#274d35}
+.event-page .art-platform{background:#c9ff54;color:#24341b;box-shadow:0 24px 50px -25px #52732050}
+.event-page .platform-skills{color:#304b1f}
+.event-page .platform-bottom{color:#314b22;border-color:#97be48}
+.event-page .platform-bottom i{background:#436927}
+.event-page .hero-prizes>a>strong{color:#274d35}
+.event-page .join{background:#fff}
+.event-page .step p{font-size:15px;line-height:1.85;min-height:112px}
+.event-page .step .text-link{font-size:15px}
+.event-page .start-grid p,.event-page .submission-list p,.event-page .judging li p{font-size:14px;line-height:1.85}
+.event-page .faq{background:#fafbf8}
+.event-page .closing{background:#f5f8ef;color:var(--ink);border-top:1px solid #d8e2ce}
+.event-page .closing p{color:#424b43}
+.event-page .closing-contact,.event-page .closing-contact .community{border-color:#cbd8c0}
+.event-page .closing-contact a,.event-page .closing-contact button{color:#274d35}
+.event-page .toast{background:#eff7df;color:#24341b;border:1px solid #9daf84}
+.event-page #ideas .topic-footnote{font-size:13px}
+.event-page #ideas .topic-more summary{font-size:13px}
+.form-page .form-hero{background:#eff7df;color:var(--ink)}
+.form-page .form-hero p{color:#424b43}
+.form-page input:focus-visible,.form-page select:focus-visible,.form-page textarea:focus-visible{outline:2px solid #274d35;outline-offset:2px;border-color:#274d35}
+.form-page .field input[aria-invalid="true"],.form-page .field select[aria-invalid="true"],.form-page .field textarea[aria-invalid="true"]{border-color:var(--error);background:#fff3f2}
+.form-page .consent input[aria-invalid="true"]{outline-color:var(--error)}
+@media(max-width:800px){.event-page .step p{min-height:0}.event-page .closing-contact{border-color:#cbd8c0}}
+@media(max-width:480px){
+ .event-page #ideas .topic-task dd,.event-page #ideas .topic-own p,.event-page .faq-answer{font-size:14px}
+ .event-page .closing-contact .community{border-color:#cbd8c0}
+}
