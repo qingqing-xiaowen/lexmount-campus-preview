@@ -7,9 +7,9 @@ export const eventConfig = Object.freeze({
   requestTimeoutMs: 12000,
   editUrlAllowedOrigins: [],
   help: {
-    url: 'current-20261008.html#contact', email: 'support@lexmount.cn', reviewerAccess: '',
+    url: 'tech-activity-20261008.html#contact', email: 'support@lexmount.cn', reviewerAccess: '',
     // 当前为运营确认的永久二维码；改用临时码时设置 qrPermanent: false 并填写 qrExpiresAt。
-    qrImage: 'wecom-event-qr-current-20261008.png', qrPermanent: true, qrExpiresAt: null,
+    qrImage: 'tech-groupqr-20261008.png', qrPermanent: true, qrExpiresAt: null,
     qrExpiryLabel: '活动群二维码长期有效；如无法入群，请通过公司支持邮箱联系我们。'
   },
   studentOffer: {

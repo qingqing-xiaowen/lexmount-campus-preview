@@ -1,4 +1,4 @@
-import { eventConfig } from './event-config-current-20261008.js';
+import { eventConfig } from './tech-event-config-20261008.js';
 
 // Keep one QR asset for every participant entry. No registration or entitlement logic runs here.
 const qrLink = document.querySelector('[data-event-qr]');
